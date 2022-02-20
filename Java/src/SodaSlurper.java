@@ -1,4 +1,4 @@
-public class SodaSlurper{
+public class SodaSlurper {
     public static void main(String[] args) {
         calculate(9,0,3);
         calculate(5,5,2);
