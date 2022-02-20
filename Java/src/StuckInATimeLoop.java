@@ -8,6 +8,6 @@ public class StuckInATimeLoop {
         for(int i = 1; i <= input; i++){
             System.out.println(i + " Abracadabra");
         }
-        
+
     }
 }
