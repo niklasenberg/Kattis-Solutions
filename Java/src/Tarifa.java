@@ -1,14 +1,17 @@
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Tarifa extends Solution{
-    public static void main(String[] args) throws IOException {
+public class Tarifa{
+    ArrayList<String> input = new ArrayList<>();
+
+    public static void main(String[] args){
         Tarifa tarifa = new Tarifa();
 
-        tarifa.getInput("Java/Inputs/TarifaInput.txt");
-        tarifa.calculate();
-        tarifa.getInput("Java/Inputs/TarifaInput2.txt");
-        tarifa.calculate();
-        tarifa.getInput("Java/Inputs/TarifaInput3.txt");
+        Scanner in = new Scanner(System.in);
+        while(in.hasNext()){
+            tarifa.input.add(in.nextLine());
+        }
+
         tarifa.calculate();
     }
 

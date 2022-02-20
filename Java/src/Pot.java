@@ -1,15 +1,18 @@
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Pot extends Solution{
+public class Pot{
+    ArrayList<String> input = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         Pot pot = new Pot();
 
-        pot.getInput("Java/Inputs/PotInput.txt");
-        pot.calculate();
-        pot.getInput("Java/Inputs/PotInput2.txt");
-        pot.calculate();
-        pot.getInput("Java/Inputs/PotInput3.txt");
+        Scanner in = new Scanner(System.in);
+        while(in.hasNext()){
+            pot.input.add(in.nextLine());
+        }
+
         pot.calculate();
     }
 
