@@ -1,2 +1,2 @@
 # Kattis-Solutions
-My solutions for Kattis problems using https://open.kattis.com. Only in Java for now, might add some Python variants in the future. 
+My solutions for Kattis problems using https://open.kattis.com. Mostly in Java but I'm working on some Python 3 variants. 
