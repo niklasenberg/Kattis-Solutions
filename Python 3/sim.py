@@ -7,17 +7,19 @@ def run():
         result = []
         line = input()
         index = 0
+        size = 0
 
         for char in line:
-            if char is '[':
+            if char == '[':
                 index = 0
-            elif char is ']':
-                index = len(result)
-            elif char is '<' and index is not 0:
-                result.pop(index-1)
-                if index >= 1:
-                    index -= 1
-            elif char is not '<':
+            elif char == ']':
+                index = size - 1
+            elif char == '<' and index != 0:
+                result[index-1] = ''
+                index -= 1
+            elif char != '<':
+                if index == size - 1:
+                    size += 1
                 result.insert(index, char)
                 index += 1
 
